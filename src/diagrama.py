@@ -37,3 +37,4 @@ with Diagram("Sistema de vendas AWS", show=True):
     lambda_func >> db_nosql
     lambda_func >> queue
     lambda_func >> logging
+#add
