@@ -7,7 +7,7 @@ from diagrams.aws.security import Cognito
 from diagrams.aws.integration import SQS
 from diagrams.aws.management import Cloudwatch
 
-with Diagram("Sistema de vendas AWS", show=True):
+with Diagram("Sistema de mercado AWS teste", show=True):
     with Cluster("Frontend"):
         frontend = S3("Static Website")
         cdn = CloudFront("CDN")
@@ -37,3 +37,4 @@ with Diagram("Sistema de vendas AWS", show=True):
     lambda_func >> db_nosql
     lambda_func >> queue
     lambda_func >> logging
+#add
